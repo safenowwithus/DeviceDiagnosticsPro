@@ -1,0 +1,187 @@
+.header{    background: #151A7BDB;
+    color: #fff;}
+
+.logo h3{    line-height: 40px;
+    font-family: Georgia;
+    font-weight: 700;
+    margin: 13px 0px;}
+.logo h3 span{    color: #f60;}
+.contact-list a{ font-size: 20px; text-decoration: none;}
+.menu-contact{    text-align: right;
+    color: #fff;}
+.menu-contact ul{    margin: 15px 0px;}
+.menu-contact ul li{    list-style: none;
+    display: inline-block;
+    line-height: 40px;} 
+.menu-contact ul li a{ color: #fff;;}
+.middle-banners{    background: #ccc;
+    padding: 25px;}
+.service-box{     float: left;
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #333;
+    text-align: center;
+	cursor:pointer;
+margin-bottom: 20px;}
+.service-icon{    font-size: 30px;
+    text-align: center;
+    color: #141cb5;}
+.service-icon img{ width: 42px;}
+
+.service-text p{margin-bottom: 0px;
+    font-weight: 500;}
+ 
+    .text-content .text-heading, .elementor-heading-title{ color:#151a7b; margin-top: 10px;;}
+
+    .section-heading{    text-align: center;
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: #141cb5;
+        font-family: Georgia;}
+.product-box{        float: left;
+    width: 100%;
+    border: 1px solid #000;
+    overflow: hidden;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 25px;
+    min-height: 359px;}
+    .product-box:hover{     box-shadow: 2px 2px 2px 2px #ccc;  }
+.product-image{    max-width: 240px;}
+.pTitle{    color: #141cb5;
+    font-family: "Nunito Sans", Sans-serif;
+    font-size: 14px;
+    margin-bottom: 0px;
+    font-weight: 600;}
+.pPrice{color: #272727; font-family: "Nunito Sans", Sans-serif;
+    font-size: 22px; font-weight: 600;}   
+.footer{    background: #151A7BDB;
+    color: #fff;
+    padding: 28px 0px;
+    margin-bottom: 59px;}
+.footer .footer-heading{
+    font-size: 26px;
+    font-family: georgia;
+    font-weight: 600;
+}
+.elementor-heading-title{ font-size: 26px; margin-bottom: 20px;}
+.footer p{    margin-bottom: 2px;}
+.footer ul{    margin: 0px;
+    padding: 0px;}
+.footer ul li{    list-style: none;
+    color: #fff;}
+.footer ul li a{ text-decoration: none; color: #fff;;}
+
+.phone a{    color: #fff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;}
+    .fixed-footer{    background: #151a7b;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        text-align: center;
+        padding: 10px;}
+    .fixed-footer a{    color: #fff;
+        font-size: 24px;
+        text-decoration: none;
+        font-weight: 700;}
+    .service-image{  
+        width:476px;  
+        max-width: 100%;
+        border-radius: 5px;
+        border: #151a7b 1px solid;
+        margin-bottom: 10px;
+        align-items: center;
+        margin: 0px auto;
+        display: block;}    
+ .call-box{
+    background: rgba(17,23,35,0.8);
+    padding: 35px 0px 20px 0px;
+    display: table;
+    width: 100%;
+    border-radius: 5px;
+ }   
+.banner-content h1 {
+    font-size: 33px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.cta-pop {
+    display: block;
+    margin: 0px auto;
+    width: 300px;
+    background: #c20000;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.banner-content .cta-banner {
+    display: block;
+    margin: 0px auto 0px;
+    font-size: 30px;
+    text-align: center;
+    color: #f60;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+}       
+.banner-content .cta-banner span {
+    font-size: 14px;
+    font-weight: 500;
+}
+#first-page label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-bottom: 26px;
+    font-weight: normal;
+}
+ @media(max-width:546px)
+ {
+    .logo, .menu-contact{text-align: center;}
+    .menu-contact ul{ margin: 0px;}
+    .middle-banners {
+       padding: 5px;
+    }
+    .call-box {
+        padding: 20px;
+        display: table;
+        width: 100%;
+        border-radius: 5px;
+    }
+    .banner-content h1 {
+        font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin-bottom: 26px;
+    font-weight: normal;
+    }
+    .ct-1 {
+        font-size: 21px;
+    font-size: 21px;
+    font-weight: 500;
+    background: #d45500;
+    color: #fff;
+    border-radius: 4px;
+    width: 210px;
+    line-height: 36px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    }
+    .banner-content .cta-banner span {
+        font-size: 12px;
+        font-weight: 500;
+    }
+ }       
+    
