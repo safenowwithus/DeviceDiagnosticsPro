@@ -1,0 +1,451 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/p1.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+<style>
+.tab-container {
+	float: left;
+	margin-bottom: 20px;
+}
+.tab-container .tabs {
+	float: left;
+	width: 100%;
+}
+.tabs .tab {
+  float: left;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-right: 1px;
+    box-shadow: 1px 1px 1px 1px #939393;
+    font-weight: 700;
+    cursor: pointer;
+    color: #363a8e;
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: georgia;
+    font-size: 17px;
+}
+.tabs .tab span {
+	float: left;
+	width: 94%;
+}
+.tabs .tab i {
+	font-size: 20px;
+	line-height: 28px;
+	float: right;
+}
+.tabs .tab.active {
+	border-radius: 4px 4px 0px 0px;
+	box-shadow: none;
+}
+.tab-content {
+	background: #fff;
+	/* border: 1px solid #000; */
+	float: left;
+	width: 100%;
+	box-shadow: 1px 1px 1px 1px #ccc;
+	padding: 10px;
+	display: none;
+	margin-bottom: 10px;
+	margin-top: -10px;
+}
+.tab-content.active-tab {
+	display: block;
+}
+.btn-cta {
+	margin-top: 0px;
+	background: #f60;
+	border: none;
+	cursor: pointer;
+}
+.tab-content h3{font-size: 18px;
+    font-family: georgia;}
+.btn-cta:hover {
+	background: #e5620b;
+}
+label {
+	font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    /* font-family: 'Noto Sans','Arial','Helvetica','sans-serif'; */
+    font-family: georgia;
+}
+.livenow {
+  position: absolute;
+    border: 20px;
+    right: 0px;
+    background: #a4ce4e!important;
+    width: 120px;
+    z-index: 99999;
+    color: #000;
+    text-align: center;
+    bottom: 0px;
+    border-radius: 17px;
+    font-weight: 700;
+}
+.live-now
+{
+  position: fixed;
+    right: 12px;
+    bottom: 45px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* overflow: hidden; */
+    border: 1px solid #f60;
+}
+.live-now img{ max-width: 100%;}
+.info-box{    float: left;
+    background: #f2f2f2;
+    width: 100%;
+    /* padding: 20px; */
+    margin-top: 20px;
+    box-shadow: 1px 1px 1px 1px #ccc;}
+.info-box .box-title{font-size: 21px;
+    font-weight: 600;
+    padding: 0px 15px;}
+.box-content{    padding: 15px;}
+.info-box img{ max-width: 100%;}
+.box-content p{}
+.box-content p a{}
+ @media(max-width:546px) {
+.tab {
+	width: 100%;
+	margin-bottom: 2px;
+}
+.form-control {
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 18px;
+}
+}
+.middle-banners {
+    background: url(images/about-banner-1.jpg) #ccc;
+    padding: 15px 0px;
+}
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.offer-link a{    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;}
+ .section-header{ margin-top: 20px; } 
+ .section-header h2{ font-weight: 700;
+    color: #f60;
+    margin-bottom: 10px;
+    font-size: 29px;  } 
+ .section-header h3{     font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;}    
+</style>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-654813653"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-654813653');
+</script>
+</head>
+
+<body>
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-12">
+        <div class="logo">
+          <h3>iPhone <span>Support</span></h3>
+        </div>
+      </div>
+      <div class="col-md-7 col-sm-12">
+        <div class="menu-contact"> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="middle-banners">
+  <div class="container">
+    <div class="container" id="printer-links">
+      <div class="row">
+        <h3 class="offer-link" style="text-align: center;"><a href="tel:+1-802-300-3377">Black Friday Offer: 30% Instant Discount</a></h3>
+        <div class="tab-container">
+          <div class="tabs" target="purchase">
+            <div class="tab"> <span>iPhone</span><i class="fa fa-minus"></i> </div>
+            <div class="tab-content" id="purchase" style="display: block;">
+              <h3>We need a few details: </h3>
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option value="select-model">Select Model</option>
+                        <option value="iPhone 6s">iPhone 6s</option>
+                        <option value="iPhone 6s Plus">iPhone 6s Plus</option>
+                        <option value="iPhone SE(1st generation)">iPhone SE(1st generation)
+                        </option>
+                        <option value="iPhone 7">iPhone 7</option>
+                        <option value="iPhone 7 Plus">iPhone 7 Plus</option>
+                        <option value="iPhone 8">iPhone 8</option>
+                        <option value="iPhone 8 Plus">iPhone 8 Plus</option>
+                        <option value="iPhone X">iPhone X</option>
+                        <option value="iPhone XR">iPhone XR</option>
+                        <option value="iPhone XS">iPhone XS</option>
+                        <option value="iPhone XS Max">iPhone XS Max</option>
+                        <option value="iPhone 11">iPhone 11</option>
+                        <option value="iPhone 11 Pro">iPhone 11 Pro</option>
+                        <option value="iPhone 11 Pro Max">iPhone 11 Pro Max</option>
+                        <option value="iPhone SE(2nd generation)">iPhone SE(2nd generation)
+                        </option>
+                        <option value="iPhone 12">iPhone 12</option>
+                        <option value="iPhone 12 Mini">iPhone 12 Mini</option>
+                        <option value="iPhone 12 Pro">iPhone 12 Pro</option>
+                        <option value="iPhone 12 Pro Max">iPhone 12 Pro Max</option>
+                        <option value="iPhone 13">iPhone 13</option>
+                        <option value="iPhone 13 Mini">iPhone 13 Mini</option>
+                        <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+                        <option value="iPhone 13 Pro Max">iPhone 13 Pro Max</option>
+                        <option value="iPhone SE(3rd generation)">iPhone SE(3rd generation)
+                        </option>
+                        <option value="iPhone 14">iPhone 14</option>
+                        <option value="iPhone 14 Plus">iPhone 14 Plus</option>
+                        <option value="iPhone 14 Pro">iPhone 14 Pro</option>
+                        <option value="iPhone 14 Pro Max">iPhone 14 Pro Max</option>
+                        <option value="iPhone 15">iPhone 15</option>
+                        <option value="iPhone 15 Plus">iPhone 15 Plus</option>
+                        <option value="iPhone 15 Pro">iPhone 15 Pro</option>
+                        <option value="iPhone 15 Pro Max">iPhone 15 Pro Max</option>
+
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option value="select-model">Select Service</option>
+                        <option value="Repair">Repair</option>
+                        <option value="Buy">Buy</option>
+                        <option value="Exchange">Exchange</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                  <a href="tel:+1-802-300-3377" class="btn btn-success btn-cta"> Get Live Support </a> 
+                </div>
+            </div>
+             </div>
+            <div class="tab" target="troubleshoot"> <span>Macbook</span><i class="fa fa-plus"></i> </div>
+            <div class="tab-content" id="troubleshoot">
+              <h3>We need a few details: </h3>
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option value="select-model">Select Model</option>
+                        <option value="Macbook Pro M1">Macbook Pro M1</option>
+                        <option value="MacBook Pro M2">MacBook Pro M2</option>
+                        <option value="iMac">iMac</option>
+                        <option value="Mac Studio">Mac Studio</option>
+                        <option value="Mac Pro">Mac Pro</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option value="select-model">Select Service</option>
+                        <option value="Repair">Repair</option>
+                        <option value="Buy">Buy</option>
+                        <option value="Exchange">Exchange</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                  <a href="tel:+1-802-300-3377" class="btn btn-success btn-cta"> Get Live Support </a>
+                </div>
+            </div>
+            
+            </div>
+            <div class="tab" target="installation"> <span>Airpods</span><i class="fa fa-plus"></i> </div>
+            <div class="tab-content" id="troubleshoot">
+              <h3>Airpods: </h3>
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option value="select-model">Select Model</option>
+                        <option value="Airpods">Airpods</option>
+                        <option value="Airpods 1st Gen">Airpods 1st Gen</option>
+                        <option value="Airpods 2nd Gen">Airpods 2nd Gen</option>
+                        <option value="Airpods 3rd gen">Airpods 3rd gen</option>
+                        <option value="Airpods Pro">Airpods Pro</option>
+                        <option value="Airpods Pro 2nd Gen">Airpods Pro 2nd Gen</option>
+                        <option value="Airpods Max">Airpods Max</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option value="select-model">Select Service</option>
+                        <option value="Repair">Repair</option>
+                        <option value="Buy">Buy</option>
+                        <option value="Exchange">Exchange</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                  <a href="tel:+1-802-300-3377" class="btn btn-success btn-cta"> Get Live Support </a>
+                </div>
+            </div>
+            </div>
+            <div class="tab" target="accessories"> <span>Apple TV</span><i class="fa fa-plus"></i> </div>
+            <div class="tab-content" id="troubleshoot">
+              <h3>Apple TV: </h3>
+              <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option value="select-model">Select Model</option>
+                        <option value="Apple TV">Apple TV</option>
+                        <option value="Apple TV HD">Apple TV HD</option>
+                        <option value="Apple TV 4K">Apple TV 4K</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select class="form-control">
+                        <option value="select-model">Select Service</option>
+                        <option value="Repair">Repair</option>
+                        <option value="Buy">Buy</option>
+                        <option value="Exchange">Exchange</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                  <a href="tel:+1-802-300-3377" class="btn btn-success btn-cta"> Get Live Support </a>
+                </div>
+            </div>
+            </div>
+            <p style="color: #fff; font-family: georgia; font-size: 14px; margin-top: 10px; float: left;">How It Works?:<br>
+              Select Requirements - Get Offers - Request Fulfillment
+              </p>
+          </div>
+        </div>
+       </div>
+    </div>
+  </div>
+</section>
+<div class="information-section">
+  
+<div class="container">
+  <div class="section-header">
+    <h2>7 Common Phone Problems</h2>
+    <h3 class="text-left wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;">
+        1. Frozen or Unresponsive iPhone:
+    </h3>
+    <p>
+        <b>Force Restart:</b> Press and release Volume Up, then Volume Down, and press and hold the Side (or
+        Power) button until the Apple logo appears.
+    </p>
+    <h3>
+        2. Battery Drain:</h3>
+    <p><b>
+            Check Battery Usage:</b> Go to Settings &gt; Battery to see which apps are consuming the most
+        battery. Close unused apps or consider a battery replacement if it's old.
+    </p>
+    <h3>
+        3. Software Glitches:</h3>
+    <p><b>Update iOS:</b> Go to Settings &gt; General &gt; Software Update and install the latest iOS version
+        available.</p>
+    <p><b>
+            Reset Settings:</b> Go to Settings &gt; General &gt; Reset &gt; Reset All Settings. This won't delete
+        data but will reset settings to default.
+    </p>
+    <h3>
+        4. Connectivity Issues:</h3>
+    <p><b>Wi-Fi or Bluetooth Problems:</b> Toggle airplane mode on and off, restart your router, or forget
+                and reconnect to the network/device.
+    </p>
+    <h3>5. App Issues:</h3>
+    <p><b>Close and Reopen:</b> Swipe up from the bottom and close the app. Reopen it and check if it works.
+    </p>
+    <p><b>Delete and Reinstall:</b> Remove the app, restart your iPhone, and reinstall the app from the App
+        Store.
+    </p>
+    <h3>6. Hardware Problems:</h3>
+    <p><b>Physical Damage:</b> If your phone is physically damaged, take it to an authorized service center
+        or an Apple Store.
+    </p>
+    <p><b>Camera Issues:</b> Ensure no physical obstructions and try restarting the phone.</p>
+    <h3>7. Other Issues:</h3>
+    <p><b>
+            Backup and Restore:</b> If nothing else works, backup your data through iTunes or iCloud and
+        perform a factory reset. Restore your data afterward.
+        Professional Assistance:</p>
+    <p>
+        If these steps don't resolve the issue or if it's related to hardware problems, it's best to:
+    </p>
+    <p>
+    Call Our Support Number for Live Help.
+</p>
+<p>In the world of technology the survival is not for the fitter but for the â€˜hungeredâ€™. So, if you have
+    the hunger then we have all the solution and services for the total digital marketing online campaign to
+    take your business to the next level. <br>The geo-spatial navigation, and the dynamic theory for the
+    business types to make your online identity prominent. If you still need the Reason to believe in what
+    makes us different and most entrustable to give any â€˜brand an identity they deserveâ€™ just take a look at
+    why we donâ€™t only believe in making a Statements</p>
+</div>
+</div>
+<section class="footer">
+  <div class="container">
+  <div class="col col-md-12">
+    <div class="row">
+     <div class="col col-md-3 col-12">
+        <h2 class="footer-heading">Contact Us</h2>
+        <span class="phone"> <a href="tel:+1-802-300-3377"> <i class="fa fa-phone"></i> +1-802-300-3377  </a> </span> </div>
+    </div>
+  </div>
+</div></section>
+<div class="fixed-footer">
+  <div class="container"> <a href="tel:+1-802-300-3377">Call Us : +1-802-300-3377 </a> </div>
+</div>
+<div class="live-now">
+  <a href="tel:+1-802-300-3377">
+    <img src="images/call-agent.png">
+  </a>
+  <span class="livenow blink_me">Live Now</span>
+</div>
+<script src="js/jquery.min.js"></script> 
+<script>
+      $(document).ready(function () {
+        var url = window.location.href;
+        $(".tab").click(function(){
+          if($(this).children("i").hasClass("fa-minus") )
+          {
+            $(this).removeClass("active");
+            $(this).children("i").removeClass("fa-minus");
+            $(this).children("i").addClass("fa-plus");
+            //$(".tab").children("i").addClass("fa-angle-right");
+            $(".tab-content").slideUp();
+          }
+          else{
+            $(".tab").removeClass("active");
+            $(this).addClass("active");
+            $(".tab").children("i").removeClass("fa-minus");
+            $(".tab").children("i").addClass("fa-plus");
+            $(this).children("i").removeClass("fa-plus");
+            $(this).children("i").addClass("fa-minus");
+            $(".tab-content").slideUp();
+            $(this).next().slideDown();
+          }
+        });
+      })
+    </script>
+    <script>
+      gtag('config', 'AW-654813653/RvpRCNPMj9MYENXTnrgC', {
+        'phone_conversion_number': '+1-802-300-3377'
+      });
+    </script>
+
+</div></body></html>
